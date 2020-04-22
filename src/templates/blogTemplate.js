@@ -13,7 +13,7 @@ export default function Template({
   const { frontmatter, html } = markdownRemark
 
   const disqusConfig = {
-    shortname: process.env.GATSBY_DISQUS_NAME,
+    shortname: 'adestmedia',
     config: { identifier: markdownRemark.id, title: frontmatter.title },
   }
 
