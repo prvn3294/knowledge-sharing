@@ -14,8 +14,10 @@ export default function Template({
 
   const disqusConfig = {
     shortname: process.env.GATSBY_DISQUS_NAME,
-    config: { identifier: frontmatter.date, title: frontmatter.title },
+    config: { identifier: markdownRemark.id, title: frontmatter.title },
   }
+
+  console.log('disqusConfig : ', disqusConfig)
 
   return (
     <Layout>

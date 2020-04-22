@@ -1,5 +1,5 @@
 backend:
-  name: github
+  name: git-gateway
   repo: W3Layouts/gatsby-starter-delog
 media_folder: static/assets
 public_folder: /assets
