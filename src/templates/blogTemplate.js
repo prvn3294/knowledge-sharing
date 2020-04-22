@@ -4,11 +4,14 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import { DiscussionEmbed } from "disqus-react"
 import Share from '../components/Share';
+import useSiteMetadata from "../hooks/use-site-metadata"
 
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.
 }) {
-  console.log('Praveen : ',data)
+  const {title,twitterHandle, siteUrl} = useSiteMetadata()
+
+  
   const { markdownRemark } = data 
   // data.markdownRemark holds your post data
   const { frontmatter, html } = markdownRemark
@@ -17,8 +20,6 @@ export default function Template({
     shortname: 'adestmedia',
     config: { identifier: markdownRemark.id, title: frontmatter.title },
   }
-
-
 
   return (
     <Layout>
@@ -48,16 +49,16 @@ export default function Template({
         </article>
       </div>
       <br></br>
-      {/* <Share
+      <Share
 				socialConfig={{
 					twitterHandle,
 					config: {
-						url: `${url}${slug}`,
-						title,
+						url: `${siteUrl}${title}`,
+            title,
+            mediaImage:`${frontmatter.thumbnail}`
 					},
 				}}
-				tags={tags}
-			/> */}
+			/>
       <br></br>
       <DiscussionEmbed {...disqusConfig} />
     </Layout>

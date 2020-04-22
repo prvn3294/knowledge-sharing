@@ -13,7 +13,7 @@ module.exports = {
   siteMetadata: {
     title: `Adest media`,
     description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://delog-w3layouts.netlify.com/`,
+    siteUrl: `https://www.adestmedia.com/`,
     home: {
       title: `Saying it loud & Proud `,
       description: `We write about technology, gadgets, self improvements, travel and world's current affairs  :)`,
@@ -21,7 +21,6 @@ module.exports = {
     /* W3Layouts domain verification key for contact forms https://my.w3layouts.com/Forms/ */
     w3l_dom_key: `5e609f7a2d23fCF_Domain_verify`,
     twitterHandle: '@praveen__rana',
-		url: 'https://www.adestmedia.com',
   },
   plugins: [
     {
