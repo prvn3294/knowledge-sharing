@@ -12,7 +12,7 @@ module.exports = {
     siteUrl: `https://delog-w3layouts.netlify.com/`,
     home: {
       title: `Say it loud & Proud `,
-      description: `We are a digital media news company. :)`,
+      description: `We write about technology, mobile, self improvements, travel and world's current affairs  :)`,
     },
     /* W3Layouts domain verification key for contact forms https://my.w3layouts.com/Forms/ */
     w3l_dom_key: `5e609f7a2d23fCF_Domain_verify` 
