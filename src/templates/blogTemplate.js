@@ -12,7 +12,7 @@ export default function Template({
 
   const disqusConfig = {
     shortname: process.env.GATSBY_DISQUS_NAME,
-    config: { identifier: slug, title },
+    config: { identifier: frontmatter.title },
   }
 
   return (
