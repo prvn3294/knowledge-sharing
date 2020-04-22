@@ -8,7 +8,6 @@ export default function Template({
   data, // this prop will be injected by the GraphQL query below.
 }) {
   const { markdownRemark } = data 
-  console.log('Post Data :', markdownRemark)
   // data.markdownRemark holds your post data
   const { frontmatter, html } = markdownRemark
 
@@ -16,8 +15,6 @@ export default function Template({
     shortname: 'adestmedia',
     config: { identifier: markdownRemark.id, title: frontmatter.title },
   }
-
-  console.log('disqusConfig : ', disqusConfig)
 
   return (
     <Layout>
@@ -46,6 +43,7 @@ export default function Template({
           />
         </article>
       </div>
+      <br></br><br></br>
       <DiscussionEmbed {...disqusConfig} />
     </Layout>
   )
