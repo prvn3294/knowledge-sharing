@@ -21,8 +21,9 @@ import './Share.scss';
 
 class Share extends Component {
   render() {
-    const shareUrl = this.props.socialConfig.config.url;
-    const title = this.props.socialConfig.config.title;
+    const { shareUrl, title} = {...this.props.socialConfig.config};
+  
+    
     //const mediaImage = this.props.socialConfig.config;
 
     return (

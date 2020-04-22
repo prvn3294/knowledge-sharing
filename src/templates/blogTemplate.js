@@ -9,22 +9,24 @@ import useSiteMetadata from "../hooks/use-site-metadata"
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.
 }) {
-  const {title,twitterHandle, siteUrl} = useSiteMetadata()
-
-  
+  const {twitterHandle, siteUrl} = useSiteMetadata()
   const { markdownRemark } = data 
   // data.markdownRemark holds your post data
-  const { frontmatter, html } = markdownRemark
+  const { frontmatter, html } = markdownRemark;
+  const pageTitle = frontmatter.title
+  const shareUrl = `${siteUrl}${frontmatter.path}`;
+  const mediaImage = `${siteUrl}${frontmatter.thumbnail}`
+
 
   const disqusConfig = {
     shortname: 'adestmedia',
-    config: { identifier: markdownRemark.id, title: frontmatter.title },
+    config: { identifier: markdownRemark.id, title: pageTitle },
   }
 
   return (
     <Layout>
       <Helmet>
-        <title>{frontmatter.title}</title>
+        <title>{pageTitle}</title>
         <meta name="description" content={frontmatter.metaDescription} />
       </Helmet>
       <div className="blog-post-container">
@@ -32,13 +34,13 @@ export default function Template({
           
           {!frontmatter.thumbnail && (
             <div className="post-thumbnail">
-              <h1 className="post-title">{frontmatter.title}</h1>
+              <h1 className="post-title">{pageTitle}</h1>
               <div className="post-meta">{frontmatter.date}</div>
             </div>
           )}
           {!!frontmatter.thumbnail && (
             <div className="post-thumbnail" style={{backgroundImage: `url(${frontmatter.thumbnail})`}}>
-              <h1 className="post-title">{frontmatter.title}</h1>
+              <h1 className="post-title">{pageTitle}</h1>
               <div className="post-meta">{frontmatter.date}</div>
             </div>
           )}
@@ -53,9 +55,9 @@ export default function Template({
 				socialConfig={{
 					twitterHandle,
 					config: {
-						url: `${siteUrl}${title}`,
-            title,
-            mediaImage:`${frontmatter.thumbnail}`
+						shareUrl: shareUrl,
+            title:pageTitle,
+            mediaImage:mediaImage
 					},
 				}}
 			/>
