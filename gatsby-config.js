@@ -19,7 +19,9 @@ module.exports = {
       description: `We write about technology, gadgets, self improvements, travel and world's current affairs  :)`,
     },
     /* W3Layouts domain verification key for contact forms https://my.w3layouts.com/Forms/ */
-    w3l_dom_key: `5e609f7a2d23fCF_Domain_verify` 
+    w3l_dom_key: `5e609f7a2d23fCF_Domain_verify`,
+    twitterHandle: '@praveen__rana',
+		url: 'https://www.adestmedia.com',
   },
   plugins: [
     {
@@ -59,6 +61,6 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-netlify-cms`,
     'gatsby-plugin-dark-mode',
-    `gatsby-plugin-netlify-cms`
+    `gatsby-plugin-netlify-cms`,
   ],
 }

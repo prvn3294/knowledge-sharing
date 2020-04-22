@@ -3,10 +3,12 @@ import Helmet from 'react-helmet';
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import { DiscussionEmbed } from "disqus-react"
+import Share from '../components/Share';
 
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.
 }) {
+  console.log('Praveen : ',data)
   const { markdownRemark } = data 
   // data.markdownRemark holds your post data
   const { frontmatter, html } = markdownRemark
@@ -15,6 +17,8 @@ export default function Template({
     shortname: 'adestmedia',
     config: { identifier: markdownRemark.id, title: frontmatter.title },
   }
+
+
 
   return (
     <Layout>
@@ -43,7 +47,18 @@ export default function Template({
           />
         </article>
       </div>
-      <br></br><br></br>
+      <br></br>
+      {/* <Share
+				socialConfig={{
+					twitterHandle,
+					config: {
+						url: `${url}${slug}`,
+						title,
+					},
+				}}
+				tags={tags}
+			/> */}
+      <br></br>
       <DiscussionEmbed {...disqusConfig} />
     </Layout>
   )
