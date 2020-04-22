@@ -7,12 +7,14 @@ import { DiscussionEmbed } from "disqus-react"
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.
 }) {
-  const { markdownRemark } = data // data.markdownRemark holds your post data
+  const { markdownRemark } = data 
+  console.log('Post Data :', markdownRemark)
+  // data.markdownRemark holds your post data
   const { frontmatter, html } = markdownRemark
 
   const disqusConfig = {
     shortname: process.env.GATSBY_DISQUS_NAME,
-    config: { identifier: frontmatter.title },
+    config: { identifier: frontmatter.date, title: frontmatter.title },
   }
 
   return (
