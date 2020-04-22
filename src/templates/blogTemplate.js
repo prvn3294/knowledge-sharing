@@ -2,12 +2,19 @@ import React from "react"
 import Helmet from 'react-helmet';
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
+import { DiscussionEmbed } from "disqus-react"
 
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.
 }) {
   const { markdownRemark } = data // data.markdownRemark holds your post data
   const { frontmatter, html } = markdownRemark
+
+  const disqusConfig = {
+    shortname: process.env.GATSBY_DISQUS_NAME,
+    config: { identifier: slug, title },
+  }
+
   return (
     <Layout>
       <Helmet>
@@ -35,6 +42,7 @@ export default function Template({
           />
         </article>
       </div>
+      <DiscussionEmbed {...disqusConfig} />
     </Layout>
   )
 }
