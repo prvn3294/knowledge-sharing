@@ -20,22 +20,22 @@ const ContactPage = ({
           <p>Something to say? Drop a note here &rarr;</p>
         </div>
         <div>
-          <form className="form-container" action="https://sendmail.w3layouts.com/SubmitContactForm" method="post">
+          <form className="form-container" action="https://getform.io/f/5495e54e-3762-4a28-8127-7e2fa9116a4a" method="post">
             <div>
-              <label htmlFor="w3lName">Name</label>
-              <input type="text" name="w3lName" id="w3lName"/>
+              <label htmlFor="name">Name</label>
+              <input type="text" name="name" id="contact-name"/>
             </div>
             <div>
-              <label htmlFor="w3lSender">Email</label>
-              <input type="email" name="w3lSender" id="w3lSender"/>
+              <label htmlFor="email">Email</label>
+              <input type="email" name="email" id="contact-email"/>
             </div>
             <div>
-              <label htmlFor="w3lSubject">Subject</label>
-              <input type="text" name="w3lSubject" id="w3lSubject"/>
+              <label htmlFor="subject">Subject</label>
+              <input type="text" name="subject" id="contact-subject"/>
             </div>
             <div>
-              <label htmlFor="w3lMessage">Message</label>
-              <textarea name="w3lMessage" id="w3lMessage"></textarea>
+              <label htmlFor="message">Message</label>
+              <textarea name="message" id="contact-message"></textarea>
             </div>
             <div style={{display: "flex", justifyContent: "flex-end"}}>
               <input type="submit" className="button -primary" style={{marginRight: 0}} />

@@ -72,6 +72,7 @@ export default function Template({
         </article>
       </div>
       <br></br>
+      <hr class="h-ruler"></hr>
       <Share
 				socialConfig={{
 					twitterHandle,
