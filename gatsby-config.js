@@ -14,7 +14,7 @@ module.exports = {
     title: `Adest media`,
     description: `We write about technology, gadgets, self improvements, travel and world's current affairs`,
     siteUrl: `https://www.adestmedia.com/`,
-    image:'/assets/adestmedia.png',
+    image:'https://www.adestmedia.com/assets/adestmedia.png',
     home: {
       title: `Saying it loud & Proud `,
       description: `We write about technology, gadgets, self improvements, travel and world's current affairs  :)`,
