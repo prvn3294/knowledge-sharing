@@ -21,7 +21,11 @@ const IndexPage = ({
       <Helmet>
         <title>{site.siteMetadata.title}</title>
         <meta name="description" content={site.siteMetadata.description} />
-        {!site.siteMetadata.w3l_dom_key ? null : <meta name="w3l-domain-verification" content={site.siteMetadata.w3l_dom_key} />}
+        <meta name="image" content={site.siteMetadata.image}/>
+        <meta name="robots" content="index, follow"/>
+        <link rel="canonical" href={site.siteMetadata.siteUrl} />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="google-site-verification" content="NQkc2KfIMICmoqXb2YpHbqFnDOPzPh3HPwI6oJ4yQnU" />
       </Helmet>
       <HeroHeader/>
       <h2>Blog Posts &darr;</h2>
@@ -39,7 +43,8 @@ export const pageQuery = graphql`
       siteMetadata {
         title
         description
-        w3l_dom_key
+        siteUrl
+        image
       }
     }
     allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {

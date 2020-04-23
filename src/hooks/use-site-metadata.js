@@ -9,6 +9,7 @@ export default () => {
                 title
                 siteUrl
                 twitterHandle
+                image
               }
             }
           }

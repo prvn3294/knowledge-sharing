@@ -29,7 +29,7 @@ export default function Template({
     <Layout>
       <Helmet>
         <title>{postTitle || title}</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="viewport" content="width=device-width,initial-scale=1"/>
         <meta name="description" content={postDescription || description} />
         <meta name="image" content={postImage || image} />
         <meta property="og:title" content={postTitle || title} />
@@ -39,6 +39,11 @@ export default function Template({
         <meta name="twitter:title" content={postTitle || title} />
         <meta name="twitter:description" content={postDescription || description} />
         <meta name="twitter:image" content={postImage || image} />
+        <meta name="robots" content="index, follow"/>
+        <link rel="canonical" href={postUrl} />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="google-site-verification" content="NQkc2KfIMICmoqXb2YpHbqFnDOPzPh3HPwI6oJ4yQnU" />
+      
       </Helmet>
 
       <div className="blog-post-container">

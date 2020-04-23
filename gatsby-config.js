@@ -12,14 +12,13 @@ module.exports = {
   /* Your site config here */
   siteMetadata: {
     title: `Adest media`,
-    description: `A starter blog demonstrating what Gatsby can do.`,
+    description: `We write about technology, gadgets, self improvements, travel and world's current affairs`,
     siteUrl: `https://www.adestmedia.com/`,
+    image:'/assets/adestmedia.png',
     home: {
       title: `Saying it loud & Proud `,
       description: `We write about technology, gadgets, self improvements, travel and world's current affairs  :)`,
     },
-    /* W3Layouts domain verification key for contact forms https://my.w3layouts.com/Forms/ */
-    w3l_dom_key: `5e609f7a2d23fCF_Domain_verify`,
     twitterHandle: '@praveen__rana',
   },
   plugins: [
