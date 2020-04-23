@@ -38,7 +38,7 @@ export default function Template({
         <meta property="og:url" content={postUrl} />
 
         <meta name="twitter:card" content="summary" />
-        <meta name="twitter:site" content="@unseenpages" />
+        <meta name="twitter:site" content="@adestmedia" />
         <meta name="twitter:title" content={postTitle || title} />
         <meta name="twitter:description" content={postDescription || description} />
         <meta name="twitter:image" content={postImage || image} />
