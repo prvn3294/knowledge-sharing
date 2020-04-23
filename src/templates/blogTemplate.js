@@ -36,9 +36,13 @@ export default function Template({
         <meta property="og:description" content={postDescription || description} />
         <meta property="og:image" content={postImage || image} />
         <meta property="og:url" content={postUrl} />
+
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="@unseenpages" />
         <meta name="twitter:title" content={postTitle || title} />
         <meta name="twitter:description" content={postDescription || description} />
         <meta name="twitter:image" content={postImage || image} />
+
         <meta name="robots" content="index, follow"/>
         <link rel="canonical" href={postUrl} />
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
