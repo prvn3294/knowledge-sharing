@@ -16,7 +16,7 @@ module.exports = {
     siteUrl: `https://www.adestmedia.com/`,
     image:'https://www.adestmedia.com/assets/adestmedia.png',
     home: {
-      title: `Saying it loud & Proud `,
+      title: `Saying it loud & proud `,
       description: `We write about technology, gadgets, self improvements, travel and world's current affairs  :)`,
     },
     twitterHandle: '@praveen__rana',

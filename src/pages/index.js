@@ -28,7 +28,7 @@ const IndexPage = ({
         <meta name="google-site-verification" content="NQkc2KfIMICmoqXb2YpHbqFnDOPzPh3HPwI6oJ4yQnU" />
       </Helmet>
       <HeroHeader/>
-      <h2>Blog Posts &darr;</h2>
+      <h2>Recent Posts &darr;</h2>
       <div className="grids">
         {Posts}
       </div>
