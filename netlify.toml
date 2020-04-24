@@ -4,3 +4,12 @@
   
 [build.environment]
   NODE_VERSION = "10"
+
+[[plugins]]
+package = "@netlify/plugin-sitemap"
+
+  [plugins.inputs]
+  buildDir = "public"
+
+[[plugins]]
+package = "netlify-plugin-gatsby-cache"
