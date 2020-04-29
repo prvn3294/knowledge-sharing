@@ -3,10 +3,13 @@ template: BlogPost
 path: /getting-into-product-based-companies
 date: 2020-04-29T20:02:19.339Z
 title: How to get into product based companies from service based companies
+thumbnail: /assets/untitled-design-1-.png
 metaDescription: This guide is to help people who want to change their job from
   service-based organization to product-based organization
 ---
 If you are working in service based companies and want to switch to product based companies, here is the guide that can help you.
+
+
 
 1. **Mindset**: Be clear with your job change decision. Don’t be in a situation that whether you want to switch or you will be waiting for better opportunities within the current company.
 
@@ -31,5 +34,7 @@ If you are working in service based companies and want to switch to product base
 
 6. **Hope and Patience**: You will face the days where you will fail badly in interviews or people don’t reply to your texts on Linkedin. But remember you will nail the interviews too and some people will refer you for job openings.\
    You just have to keep trying and not lose hope. Have patience your hard work will pay off one day and I hope you will be there soon.
+
+
 
 **All the best champ!**
