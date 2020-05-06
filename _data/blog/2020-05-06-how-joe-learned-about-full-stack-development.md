@@ -1,6 +1,6 @@
 ---
 template: BlogPost
-path: how-Joe-learned-about-full-stack-development
+path: how-joe-learned-fullstack-development
 date: 2020-05-06T07:47:49.490Z
 title: How Joe learned about full stack development
 thumbnail: /assets/1_c_ytewoh2a1ybcmiz4rbka.jpeg
@@ -29,13 +29,7 @@ Joe did one big mistake though, Joe decided to go with technology which wasn't s
 \
 Joe could have gone for WordPress or any similar tool but a lot of the above concepts would have been missed.\
 Joe learnt a lot from this experience. That website took some time but it made Joe fall in love with JavaScript/Typescript.\
-Joe didn't know what to learn initially, so Joe kept on learning whatever was required to build that website Joe didn't give up. Be like Joe.
-
-
-
-![Developer](/assets/1_c_ytewoh2a1ybcmiz4rbka.jpeg "Developer")
-
-\
+Joe didn't know what to learn initially, so Joe kept on learning whatever was required to build that website Joe didn't give up. Be like Joe.\
 \
 \
 <`Happy Coding/>`
