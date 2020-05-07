@@ -11,13 +11,13 @@ require("dotenv").config({
 module.exports = {
   /* Your site config here */
   siteMetadata: {
-    title: `Adest media`,
-    description: `We write about technology, gadgets, self improvements, travel and world's current affairs`,
-    siteUrl: `https://www.adestmedia.com/`,
-    image:'https://www.adestmedia.com/assets/adestmedia.png',
+    title: `Joe's Home`,
+    description: `Praveen writes about Software Engineering, Self Improvement, Gadgets, Interview Preparation and Life hacks`,
+    siteUrl: `https://www.praveenrana.com/`,
+    image:'https://www.praveenrana.com/assets/adestmedia.png',
     home: {
-      title: `Saying it loud & proud `,
-      description: `We write about technology, gadgets, self improvements, travel and world's current affairs  :)`,
+      title: `Hi! I'm Praveen`,
+      description: `Praveen, aka Joe writes about Software Engineering, Self Improvement, Gadgets, Interview Preparation and Life hacks :)`,
     },
     twitterHandle: '@praveen__rana',
   },

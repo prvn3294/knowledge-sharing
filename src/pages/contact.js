@@ -3,6 +3,9 @@ import Helmet from "react-helmet"
 import { graphql } from 'gatsby'
 import Layout from "../components/layout"
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faLinkedin, faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons'
+
 const ContactPage = ({
   data: {
     site
@@ -18,6 +21,18 @@ const ContactPage = ({
         <div className="post-thumbnail" style={{backgroundImage: `url('/assets/alexander-andrews-HgUDpaGPTEA-unsplash.jpg')`, marginBottom: 0}}>
           <h1 className="post-title">Get in Touch</h1>
           <p>Something to say? Drop a note here &rarr;</p>
+          <p>Or connect me with, </p>
+          <div className="social-container">
+          <a className="social-links"  target="_blank" href="https://www.instagram.com/praveen__rana/">
+            <FontAwesomeIcon icon={faInstagram} />
+          </a>
+          <a className="social-links"  target="_blank" href="https://www.linkedin.com/in/praveen--kumar/">
+            <FontAwesomeIcon icon={faLinkedin} />
+          </a>
+          <a className="social-links"  target="_blank" href="https://www.youtube.com/channel/UCFLC5nIB029SXKWcSwKCxPQ">
+            <FontAwesomeIcon icon={faYoutube} />
+          </a>
+          </div>
         </div>
         <div>
           <form className="form-container" action="https://getform.io/f/5495e54e-3762-4a28-8127-7e2fa9116a4a" method="post">

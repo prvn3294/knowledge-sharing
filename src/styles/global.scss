@@ -322,7 +322,7 @@ body.light {
 .mode-container {
   width: 24px;
   height: 24px;
-  margin-left: 20px;
+  margin-left: 8px;
 }
 // CSS.gg icons for sun and moon
 .gg-sun {
@@ -399,4 +399,18 @@ body.light {
     width: 40%;
     margin-top: 5%;
     margin-bottom: 7%;
+}
+
+.social-links{
+  color:white;
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.social-links-header{
+  font-size: 24px;
 }
