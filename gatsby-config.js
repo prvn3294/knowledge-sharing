@@ -12,12 +12,12 @@ module.exports = {
   /* Your site config here */
   siteMetadata: {
     title: `Joe's Home`,
-    description: `Praveen writes about Software Engineering, Self Improvement, Gadgets, Interview Preparation and Life hacks`,
+    description: `Praveen writes about Software Engineering, Interview Preparation, Self Improvement, Gadgets and Life hacks`,
     siteUrl: `https://www.praveenrana.com/`,
     image:'https://www.praveenrana.com/assets/adestmedia.png',
     home: {
       title: `Hi! I'm Praveen`,
-      description: `Praveen, aka Joe writes about Software Engineering, Self Improvement, Gadgets, Interview Preparation and Life hacks :)`,
+      description: `Praveen, aka Joe writes about Software Engineering, Interview Preparation, Self Improvement, Gadgets and Life hacks :)`,
     },
     twitterHandle: '@praveen__rana',
   },
