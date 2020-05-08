@@ -16,7 +16,7 @@ module.exports = {
     siteUrl: `https://www.praveenrana.com/`,
     image:'https://www.praveenrana.com/assets/adestmedia.png',
     home: {
-      title: `Hi! I'm Praveen`,
+      title: `Saying it loud & proud`,
       description: `Praveen, aka Joe writes about Software Engineering, Interview Preparation, Self Improvement, Gadgets and Life hacks :)`,
     },
     twitterHandle: '@praveen__rana',
