@@ -26,7 +26,7 @@ const ContactPage = ({
           <a className="social-links"  target="_blank" href="https://www.instagram.com/praveen__rana/">
             <FontAwesomeIcon icon={faInstagram} />
           </a>
-          <a className="social-links"  target="_blank" href="https://www.linkedin.com/in/praveen--kumar/">
+          <a className="social-links"  target="_blank" href="https://www.linkedin.com/in/praveen-rana">
             <FontAwesomeIcon icon={faLinkedin} />
           </a>
           <a className="social-links"  target="_blank" href="https://www.youtube.com/channel/UCFLC5nIB029SXKWcSwKCxPQ">
